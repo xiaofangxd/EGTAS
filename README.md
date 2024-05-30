@@ -11,10 +11,10 @@ We propose an evolutionary graph Transformer architecture search framework (EGTA
 
 ## Running
 
-- 1. 'con_data': generate the surrogate data， 
-- 2. 'search': evolutionary search with surrogate model, 
-- 3. 'finetune': retrain for the best arches searched by EGTAS. 
-- 4. 'con_surr': construct surrogate model for Ablation studies (options),
+1. 'con_data': generate the surrogate data;
+2. 'search': evolutionary search with surrogate model;
+3. 'finetune': retrain for the best arches searched by EGTAS. 
+4. 'con_surr': construct surrogate model for Ablation studies (options).
 
 Please see details in our code annotations.
     ```
@@ -42,7 +42,7 @@ Please refer to our paper.
 ## Reference
 Please cite the paper whenever our proposed EGTAS is used to produce published results or incorporated into other software:
 ```
-@article{chao,
+@article{chao2023,
   title={Automatic Graph Topology-Aware Transformer},
   author={Wang, Chao and Zhao, Jiaxuan and Li, Lingling and Jiao, Licheng and Liu, Fang and Yang, Shuyuan},
   journal={IEEE TNNLS(Under Review)},
