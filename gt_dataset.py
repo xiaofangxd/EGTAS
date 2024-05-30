@@ -90,18 +90,6 @@ def get_graph_level_dataset(name,param=None,seed=1024,set_default_params=False,a
         args.eval_steps = 1000
         args.save_steps = 1000
         args.greater_is_better = False
-    
-    elif name in ["MNIST", "CIFAR10"]:  # benchGNNs
-        
-        train_set = GNNBenchmarkDataset(root=path, name=name, split='train')
-        val_set = GNNBenchmarkDataset(root=path, name=name, split='val')
-        test_set = GNNBenchmarkDataset(root=path, name=name, split='test')
-        args.node_feature_dim = train_set.num_node_features
-        args.node_feature_type = 'dense'
-        args.num_class = 10
-        args.eval_steps = 1000
-        args.save_steps = 1000
-        args.greater_is_better = True
 
     elif name == "ogbg-molpcba":
         inner_dataset = PygGraphPropPredDataset(name)
