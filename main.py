@@ -390,7 +390,11 @@ if __name__ == '__main__':
     pattern = 'con_data' # 1. 'con_data': generate the surrogate data, 2. 'search': evolutionary search with surrogate model, 3. 'finetune': retrain for the best arches searched by EGTAS， 4. 'con_surr': construct surrogate model for Ablation studies
     dataname = 'ogbg-molhiv' 
     path_data = './surr_data/' + dataname # save surrogate_data，
+    if not os.path.exists(path_data):  
+        os.makedirs(path_data)
     path_model = './surr_outputs/' # save surrogate model
+    if not os.path.exists(path_model):  
+        os.makedirs(path_model)
 
     if pattern == 'con_data':
         # 1 generate the surrogate_data
