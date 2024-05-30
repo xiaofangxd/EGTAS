@@ -11,10 +11,10 @@ We propose an evolutionary graph Transformer architecture search framework (EGTA
 
 ## Running
 
-1. 'con_data': generate the surrogate data;
-2. 'search': evolutionary search with surrogate model;
-3. 'finetune': retrain for the best arches searched by EGTAS. 
-4. 'con_surr': construct surrogate model for Ablation studies (options).
+1. 'con_data': Generate the surrogate data;
+2. 'search': Evolutionary search with surrogate model;
+3. 'finetune': Retrain for the best arches searched by EGTAS. 
+4. 'con_surr': Construct surrogate model for ablation studies (Options).
 
 Please see details in our code annotations.
     ```
