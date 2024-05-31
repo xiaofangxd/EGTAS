@@ -2,7 +2,7 @@
 
 # Evolutionary Graph Transformer Architecture Search Framework
 
-Source code for the paper "**[Automatic Graph Topology-Aware Transformer]**"
+Source code for the paper "**[Automatic Graph Topology-Aware Transformer](https://arxiv.org/abs/2405.19779)**"
 
 
 We propose an evolutionary graph Transformer architecture search framework (EGTAS) to automate the construction of strong graph Transformers. We build a comprehensive graph Transformer search space with the micro-level and macro-level designs. EGTAS evolves graph Transformer topologies at the macro level and graph-aware strategies at the micro level.
